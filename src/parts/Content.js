@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BrandIcon from "parts/IconText";
 import Carousel from "react-bootstrap/Carousel";
 
+
 import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -56,9 +57,9 @@ export default class Content extends Component {
     return (
       <section className="p-5">
         <div className="d-flex justify-content-between">
-          <span>English - Bahasa</span>
+          <span>BAHASA - ENGLISH</span>
           <BrandIcon></BrandIcon>
-          <BrandIcon></BrandIcon>
+          <span>LOG IN / REGISTER <i className="fa fa-lg fa-shopping-bag ml-5 mr-2"/>0 </span>
         </div>
         <div className="pt-4">
           <Carousel >
@@ -80,7 +81,6 @@ export default class Content extends Component {
         <div className="py-5">
           <div className="d-flex justify-content-between pb-2">
             <label style={{fontWeight:'bold'}}>POPULAR IN WOMEN</label>
-            <text>Buat tempat dot</text>
           </div>
           <MultiCarousel 
               swipeable={false}
@@ -126,7 +126,6 @@ export default class Content extends Component {
         <div className="py-5">
           <div className="d-flex justify-content-between pb-2">
             <label style={{fontWeight:'bold'}}>POPULAR IN MEN</label>
-            <text>Buat tempat dot</text>
           </div>
           <MultiCarousel 
               swipeable={false}
@@ -172,7 +171,6 @@ export default class Content extends Component {
         <div className="py-5">
           <div className="d-flex justify-content-between pb-2">
             <label style={{fontWeight:'bold'}}>POPULAR IN ACCESSORIES</label>
-            <text>Buat tempat dot</text>
           </div>
           <MultiCarousel 
               swipeable={false}
@@ -218,6 +216,25 @@ export default class Content extends Component {
             })}
           </MultiCarousel>
         </div>
+
+        <div className = "border-top pt-5">
+            <h3>KOLEKSI LENGKAP FASHION DARI BRAND-BRAND TERBAIK</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.</p>
+              <h3>BELANJA FASHION DI INDONESIA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.</p>
+          </div>
 
         {this.state.openImage && (
           <Lightbox

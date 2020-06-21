@@ -57,10 +57,7 @@ export default function Header(props) {
                     </ul>
                 </div>
                 <div className="ml-auto">
-                    <FontAwesomeIcon icon="search"/>
-                </div>
-                <div>
-                    <i className="fa fa-lg fa-pencil"/>
+                    <i className="fa fa-lg fa-search"></i>
                 </div>
                 </nav>
             </div>
