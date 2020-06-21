@@ -87,19 +87,6 @@ export default class Content extends Component {
               draggable={false}
               showDots={true}
               responsive={responsive}
-              // ssr={true} // means to render carousel on server-side.
-              // infinite={true}
-              // autoPlay={true}
-              // autoPlaySpeed={1000}
-              // keyBoardControl={true}
-              // centerMode={true}
-              // customTransition="all .5"
-              // transitionDuration={500}
-              // containerClass="carousel-container"
-              // removeArrowOnDeviceType={["tablet", "mobile"]}
-              // // deviceType={this.props.deviceType}
-              // dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-40-px"
             >
             {this.props.state.womenProducts.map((item,index) => {
               return (
@@ -132,19 +119,6 @@ export default class Content extends Component {
               draggable={false}
               showDots={true}
               responsive={responsive}
-              // ssr={true} // means to render carousel on server-side.
-              // infinite={true}
-              // autoPlay={true}
-              // autoPlaySpeed={1000}
-              // keyBoardControl={true}
-              // centerMode={true}
-              // customTransition="all .5"
-              // transitionDuration={500}
-              // containerClass="carousel-container"
-              // removeArrowOnDeviceType={["tablet", "mobile"]}
-              // // deviceType={this.props.deviceType}
-              // dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-40-px"
             >
             {this.props.state.menProduct.map((item,index) => {
               return (
@@ -177,24 +151,8 @@ export default class Content extends Component {
               draggable={false}
               showDots={true}
               responsive={responsive}
-              // in
-              // ssr={true} // means to render carousel on server-side.
-              // infinite={true}
-              // autoPlay={true}
-              // autoPlaySpeed={1000}
-              // keyBoardControl={true}
-              // centerMode={true}
-              // customTransition="all .5"
-              // transitionDuration={500}
-              // containerClass="carousel-container"
-              // removeArrowOnDeviceType={["tablet", "mobile"]}
-              // // deviceType={this.props.deviceType}
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px"
-              // renderDotsOutside={true}
-              // afterChange={(previousSlide, { currentSlide, onMove }) => {
-              //   alert(currentSlide)
-              // }}
             >
             {this.props.state.accProducts.map((item,index) => {
               return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from 'elements/Button'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Header(props) {
 
