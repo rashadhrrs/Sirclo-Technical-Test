@@ -54,6 +54,24 @@
     }
 }
 
+// .foo {
+//     background-color: red;
+//     width: 100%;
+//     margin: 0 auto;
+  
+//     /* Small Devices, Tablets */
+//     @media only screen and (min-width : 768px) {
+//       width: 75%;
+//       background-color: green;
+//     }
+  
+//     /* Medium Devices, Desktops */
+//     @media only screen and (min-width : 992px) {
+//       width: 50%;
+//       background-color: pink;
+//     }
+//   }
+
 header {
     border-bottom: 1px solid $gray-200;
     width: 100%;
@@ -94,14 +112,16 @@ footer {
     background-color: $gray-200;
 
     .list-group-item {
+        background-color: $gray-200;
         padding-top: 1;
+        border: 0;
         a, span {
-            color: $gray-200;
+            background-color: $gray-200;
             font-weight: 300;
         }
         a{
             @include hover-focus {
-                color: $gray-800
+                background-color: $gray-800
             }
         }
     }

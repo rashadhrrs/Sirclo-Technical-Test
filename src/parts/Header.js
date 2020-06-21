@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from 'elements/Button'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Header(props) {
 
@@ -9,7 +10,7 @@ export default function Header(props) {
 
     return (
         <header>
-            <div className="container">
+            <div className="px-5">
                 <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="collapse navbar-collapse d-flex justify-content-center">
                     <ul className="navbar-nav">
@@ -54,6 +55,9 @@ export default function Header(props) {
                             </Button>
                         </li>
                     </ul>
+                </div>
+                <div className="ml-auto">
+                    <FontAwesomeIcon icon="search"/>
                 </div>
                 <div>
                     <i className="fa fa-lg fa-pencil"/>

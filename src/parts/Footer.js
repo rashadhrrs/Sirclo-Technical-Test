@@ -5,9 +5,9 @@ export default function Footer() {
 
     return (
         <footer>
-            <div className="container pt-4">
+            <div className="px-5">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-md-4">
                         <IconText/>
                         <p>
                             Mavelin is a E-Commerce theme focused to 
@@ -16,7 +16,7 @@ export default function Footer() {
                             e-commerce bussiness site.
                         </p>
                     </div>
-                    <div className="col-2 mr-5">
+                    <div className="col-2 ml-auto">
                         <h3 className="mt-2">Categories</h3>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">Man</li>
@@ -24,7 +24,7 @@ export default function Footer() {
                             <li className="list-group-item">Sunglasses</li>
                         </ul>
                     </div>
-                    <div className="col-2 mr-3">
+                    <div className="col-2 mr-2">
                         <h3 className="mt-2">Categories</h3>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">Man</li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import 'assets/scss/style.scss'
+import 'elements/FontAwesome'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import HomePage from 'pages/HomePage';
 
