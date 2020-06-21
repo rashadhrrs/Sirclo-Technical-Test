@@ -92,4 +92,17 @@ footer {
     margin-top: 50px;
     padding-top: auto;
     background-color: $gray-200;
+
+    .list-group-item {
+        padding-top: 1;
+        a, span {
+            color: $gray-200;
+            font-weight: 300;
+        }
+        a{
+            @include hover-focus {
+                color: $gray-800
+            }
+        }
+    }
 }

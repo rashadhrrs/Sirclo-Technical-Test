@@ -1,33 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import BrandIcon from "parts/IconText";
-import Carousel from "react-bootstrap/Carousel"; 
+import Carousel from "react-bootstrap/Carousel";
 
-export default function Content() {
+export default class Content extends Component {
+componentDidMount() {
+  alert(JSON.stringify(this.props.state.banner))
+}
 
-  
-  return (
-    <section className="container pt-4">
-      <div className="d-flex justify-content-center">
-        <BrandIcon></BrandIcon>
-      </div>
-      <div className="pt-4">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://files.sirclocdn.xyz/frontend-test-37/images/this-month-banner-slider.jpg"
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://files.sirclocdn.xyz/frontend-test-37/images/this-month-banner-slider.jpg"
-              alt="Third slide"
-            />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-    </section>
-  );
+  render() {
+    return (
+      <section className="container pt-4">
+        <div className="d-flex justify-content-center">
+          <BrandIcon></BrandIcon>
+        </div>
+        <div className="pt-4">
+          <Carousel>
+            {this.props.state.banner.map((item, index) => {
+              return (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={item.image_file}
+                    alt={item.title}
+                  />
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+        </div>
+      </section>
+    );
+  }
 }

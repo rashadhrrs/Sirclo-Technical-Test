@@ -55,6 +55,9 @@ export default function Header(props) {
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <i className="fa fa-lg fa-pencil"/>
+                </div>
                 </nav>
             </div>
         </header>
